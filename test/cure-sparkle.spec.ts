@@ -1,18 +1,18 @@
-import { Precure } from "../src/precure";
+import Precure from "../src/precure";
 import { expect } from "chai";
 import "mocha";
 
-describe("キュアスパークル", () => {
-  const fontaine: Precure = Precure.createCureSparkle();
+describe("Cure Sparkle", () => {
+  const sparkle: Precure = Precure.createCureSparkle();
 
-  it("変身前", () => {
-    expect(fontaine.getName()).to.equal("平光 ひなた");
-    expect(fontaine.skill()).to.equal(undefined);
+  it("Before transformation", () => {
+    expect(sparkle.getName()).to.equal("Hiramitsu Hinata");
+    expect(sparkle.skill()).to.equal(undefined);
   });
 
-  it("変身後", () => {
-    fontaine.transform();
-    expect(fontaine.getName()).to.equal("キュアスパークル");
-    expect(fontaine.skill()).to.equal("プリキュア！ヒーリング・ブロック!");
+  it("After transformation", () => {
+    sparkle.transform();
+    expect(sparkle.getName()).to.equal("Cure Sparkle");
+    expect(sparkle.skill()).to.equal("Healing Flash!");
   });
 });

@@ -1,18 +1,18 @@
-import { Precure } from "../src/precure";
+import Precure from "../src/precure";
 import { expect } from "chai";
 import "mocha";
 
-describe("キュアフォンテーヌ", () => {
+describe("Cure Fontaine", () => {
   const fontaine: Precure = Precure.createCureFontaine();
 
-  it("変身前", () => {
-    expect(fontaine.getName()).to.equal("沢泉 ちゆ");
+  it("Before transformation", () => {
+    expect(fontaine.getName()).to.equal("Sawaizumi Chiyu");
     expect(fontaine.skill()).to.equal(undefined);
   });
 
-  it("変身後", () => {
+  it("After transformation", () => {
     fontaine.transform();
-    expect(fontaine.getName()).to.equal("キュアフォンテーヌ");
-    expect(fontaine.skill()).to.equal("プリキュア！ヒーリング・ストリーム!");
+    expect(fontaine.getName()).to.equal("Cure Fontaine");
+    expect(fontaine.skill()).to.equal("Healing Stream!");
   });
 });

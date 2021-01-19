@@ -7,8 +7,8 @@ export default abstract class State {
 
 export abstract class HumanState extends State {
   startTransform(): State {
-    console.log("スタート！プリキュア ・オペレーション");
-    console.log("キュアタッチ!");
+    console.log("Start! Precure operation");
+    console.log("Cure Touch!");
     return this.transform();
   }
   startSkill(): void{}
@@ -21,9 +21,9 @@ export abstract class PrecureState extends State {
   }
   startSkill(): string {
     const skill = this.skill();
-    console.log("エレメントチャージ!");
+    console.log("Element charge!");
     console.log(skill);
-    console.log("お大事に！");
+    console.log("Take Care!");
     return skill;
   }
 }

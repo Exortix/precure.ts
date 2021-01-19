@@ -1,18 +1,18 @@
-import { Precure } from "../src/precure";
+import Precure from "../src/precure";
 import { expect } from "chai";
 import "mocha";
 
-describe("キュアグレース", () => {
+describe("Cure Grace", () => {
   const grace: Precure = Precure.createCureGrace();
 
-  it("変身前", () => {
-    expect(grace.getName()).to.equal("花寺 のどか");
+  it("Before transformation", () => {
+    expect(grace.getName()).to.equal("Hanadera Nodoka");
     expect(grace.skill()).to.equal(undefined);
   });
 
-  it("変身後", () => {
+  it("After transformation", () => {
     grace.transform();
-    expect(grace.getName()).to.equal("キュアグレース");
-    expect(grace.skill()).to.equal("プリキュア！ヒーリング・フラワー!");
+    expect(grace.getName()).to.equal("Cure Grace");
+    expect(grace.skill()).to.equal("Healing Flower!");
   });
 });

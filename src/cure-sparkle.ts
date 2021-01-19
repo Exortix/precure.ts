@@ -2,22 +2,22 @@ import { HumanState, PrecureState } from "./state";
 
 export class Human extends HumanState {
   getName(): string {
-    return "平光 ひなた";
+    return "Hiramitsu Hinata";
   }
   transform(): PrecureState {
-    console.log("溶け合う二つの光！キュアスパークル！");
-    return new CureFontaine();
+    console.log("Two lights that melt together! Cure Sparkle!");
+    return new CureSparkle();
   }
 }
 
-export class CureFontaine extends PrecureState {
+export class CureSparkle extends PrecureState {
   getName(): string {
-    return "キュアスパークル";
+    return "Cure Sparkle";
   }
   transform(): HumanState {
     return new Human();
   }
   skill(): string {
-    return "プリキュア！ヒーリング・ブロック!";
+    return "Healing Flash!";
   }
 }

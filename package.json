@@ -1,10 +1,12 @@
 {
-  "name": "healin-good-precure-ts",
+  "name": "healin-good-precure-ts-en",
   "version": "1.0.0",
   "description": "",
   "main": "dist/precure.js",
   "types": "dist/precure.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "directories": {
     "doc": "doc"
   },
@@ -19,15 +21,17 @@
     "mocha": "^7.0.1",
     "ts-node": "^8.6.2"
   },
-  "scripts": { "test": "mocha -r ts-node/register test/**.spec.ts" },
+  "scripts": {
+    "test": "mocha -r ts-node/register test/**.spec.ts"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pokuwagata/precure.ts.git"
+    "url": "git+https://github.com/Exortix/precure.ts.git"
   },
-  "author": "yn2011",
+  "author": "exortix",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pokuwagata/precure.ts/issues"
+    "url": "https://github.com/Exortix/precure.ts/issues"
   },
-  "homepage": "https://github.com/pokuwagata/precure.ts#readme"
+  "homepage": "https://github.com/Exortix/precure.ts#readme"
 }

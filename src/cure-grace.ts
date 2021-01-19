@@ -2,22 +2,22 @@ import { HumanState, PrecureState } from "./state";
 
 export class Human extends HumanState {
   getName(): string {
-    return "花寺 のどか";
+    return "Hanadera Nodoka";
   }
   transform(): PrecureState {
-    console.log("重なる二つの花！キュアグレース！");
+    console.log("Two overlapping flowers! Cure Grace!");
     return new CureGrace();
   }
 }
 
 export class CureGrace extends PrecureState {
   getName(): string {
-    return "キュアグレース";
+    return "Cure Grace";
   }
   transform(): HumanState {
     return new Human();
   }
   skill(): string {
-    return "プリキュア！ヒーリング・フラワー!";
+    return "Healing Flower!";
   }
 }
